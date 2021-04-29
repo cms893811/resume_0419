@@ -3,62 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <title>최재학 이력서</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+           $('.ham-btn').click(function(){
+               $(this).toggleClass('active');
+               $('#gnb-nav').fadeToggle();
+           }) 
+        });
+    </script>
 </head>
 <body>
-    <div class="mainbox">
-        <div class="title-box">
-            <div class="profile-img">
-                <img src="img/ataho.jpg" alt="프로필 사진" width="120px"git>
+    <div class="mainbox" id="home">
+        <div id="gnb-nav">
+            <div class="gnb">
+                <h2 class="anchor">ANCHOR</h2>
+                <a href="#home">HOME</a>
+                <a href="#contact">TECK SKILLS</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#Project_Details">PROJECTS DETAILS</a>
+                <a href="#about">ABOUT</a>   
             </div>
-            <h1>최재학</h1>
-            <p class="name-text">주니어 개발자</p>
-            <p class="career">개발경력: 2021 ~ </p>
         </div>
-        <section>
-            <h2>ABOUT ME</h2>
-            <p class="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cupiditate deleniti harum quis, dolorum voluptatum odit nobis dignissimos perferendis dolores nemo error eaque id illo hic praesentium aliquid sint doloremque.</p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="float-wrap">
-                <p class="title-text">프로젝트 1</p>
-                <p class="year-text">2021</p>
+        <div class="resume">
+            <div class="title-box">
+                <div class="ham-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1>최재학</h1>
+                <div class="name-text">주니어 개발자</div>
+                <h2>CONTACT</h2>
+                <div id="contact">
+                    <div>Phone: 010-9949-8938</div>
+                    <div>Birth: 1997.09.29</div>
+                    <div>E-mail: cms893811@naver.com</div>
+                    <div>Address: 경기도 안양시 만안구 안양 1동 622-83</div>
+                    <div>Github: https://github.com/cms893811</div>
+                </div>
+                <div class="profile-img">
+                    <img src="img/ataho.jpg" alt="프로필 사진" width="150px">
+                </div>
             </div>
-            <p class="desc-text">Front Web Developer</p>
-            <p class="desc-subtext">HTML, CSS, JS, </p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="float-wrap">
-                <p class="title-text">프로젝트 2</p>
-                <p class="year-text">2020</p>
+            <section>
+                <h2>TECK SKILLS</h2>
+                <p class="section-text">- Java</p>
+                <p class="section-text">- JavaScript</p>
+                <p class="section-text">- html/css</p>
+                <p class="section-text">- JSP 이해</p>
+                <p class="section-text">자격증: </p>
+            </section>
+            <section id="education">
+                <h2>EDUCATION</h2>
+                <p class="section-text">고등학교 : 청주공업고등학교 [2013.03~2016.02]</p>
+                <p class="section-text">대학교 : 대림대학교 [2020.03~2023.02]</p>
+            </section>
+            <section id="projects">
+                <h2>소스(소상공인 스토리) - 음식 소상공인들을 위한 홍보앱</h2>
+                <div class="float-wrap">
+                    <p class="title-text">한이음 ICT 멘토링</p>
+                    <p class="year-text">2021.04 ~ 진행중</p>
+                </div>
+                <p class="desc-text">프로젝트 역할: Front Web Developer</p>
+                <p class="desc-subtext">사용: HTML, CSS, JS</p>
+                <p class="desc-subtext">library, framework: </p>
+            </section>
+            <section>
+                <h2>PROJECT 2</h2>
+                <div class="float-wrap">
+                    <p class="title-text">미정</p>
+                    <p class="year-text">미정</p>
+                </div>
+                <p class="desc-text">미정</p>
+                <p class="desc-subtext">미정</p>
+            </section>
+            <section id="Project_Details">
+                <h2>PROJECT DETAILS</h2>
+                <div class="project">
+                    <div class="float-wrap">
+                        <p class="title-text">한이음 ICT 멘토링</p>
+                        <p class="year-text">2021.04 ~ 진행중</p>
+                    </div>
+                    <p class="desc-text">소스(소상공인 스토리) - 음식 소상공인들을 위한 홍보앱</p>
+                    <p class="desc-subtext">상세 내용</p>
+                </div>
+                <div class="project">
+                    <div class="float-wrap">
+                        <p class="title-text"> 미정</p>
+                        <p class="year-text">미정</p>
+                    </div>
+                    <p class="desc-text">상세 내용</p>
+                    <p class="desc-subtext">미정</p>
+                </div>
+            </section>
+            <section id="about">
+                <h2>ABOUT</h2>
+                <h3>주니어 개발자</h3>
+                <p class="section-text">
+                    개발을 공부하고 있는 25살 대학생입니다. 고등학생 때 수업과목 중 우연히 프로그래밍을 만나게 되었고 흥미를 느끼게 되어 군대를 <br>
+                    전역하고 진로를 정하다 프로그래밍 쪽으로 정하게 되었습니다. 나이는 다른 학생들 보다 조금 더 있겠지만, 더욱 열심히하면 될<br>
+                    것이라는 생각으로 개발을 배우고 있습니다. 전문 분야는 아직 확언하지는 못하지만, 프론트엔드도 할 수 있는 백엔드 개발자를 목표로<br>
+                    하려합니다.
+                </p>
+            </section>
+            <div class="sns-wrap">
+                <a href="https://www.facebook.com/">
+                <img class="sns-img" src="img/facebook.png">
+                </a>
+                <img class="sns-img" src="img/insta.png">
+                <img class="sns-img" src="img/linked-in.png">
+                <img class="sns-img" src="img/twitter.png">
             </div>
-            <p class="desc-text">App Developer</p>
-            <p class="desc-subtext">Java, Android</p>
-        </section>
-        <section>
-            <h2>Activities</h2>
-            <div class="float-wrap">
-                <p class="title-text">활동 1</p>
-                <p class="year-text">2020 ~ 2021</p>
-            </div>
-            <p class="desc-text">활동 1에 대한 설명</p>
-            <p class="desc-subtext">활동 1에 대한 설명 </p>
-            <div class="float-wrap">
-                <p class="title-text">활동 2</p>
-                <p class="year-text">2020 ~ 2021</p>
-            </div>
-            <p class="desc-text">활동 2에 대한 설명</p>
-            <p class="desc-subtext">활동 2에 대한 설명 </p>
-        </section>
-        <div class="sns-wrap">
-            <a href="https://www.facebook.com/">
-            <img class="sns-img" src="img/facebook.png">
-            </a>
-            <img class="sns-img" src="img/insta.png">
-            <img class="sns-img" src="img/linked-in.png">
-            <img class="sns-img" src="img/twitter.png">
         </div>
     </div>
     <footer>
