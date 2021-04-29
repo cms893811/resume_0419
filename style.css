@@ -130,3 +130,6 @@ footer {
 p {
     margin-bottom: 5px;
 }
+.float-wrap, .desc-text, .desc-subtext, .title-text {
+    padding: 5px;
+}
